@@ -6,7 +6,7 @@ python tool to scrape proxy
 Berikut adalah penjelasan bagian per bagian dari kode Python proxy check:
 
 1. Importing Libraries
-```
+``` python
 import requests
 from bs4 import BeautifulSoup
 import socket
@@ -16,13 +16,13 @@ import socket
 - `socket`: Library bawaan Python yang menyediakan akses ke socket-level network interface. Digunakan untuk membuat koneksi jaringan antara client dan server, misalnya, untuk memeriksa apakah proxy dapat terhubung ke suatu alamat IP.
 
 2. Definisi URL Proxy
-```
+``` python
 proxy_url = "https://www.sslproxies.org/"
 ```
 - Variabel proxy_url berisi URL dari halaman yang menyediakan daftar proxy gratis. Dalam hal ini, URL tersebut mengarah ke "https://www.sslproxies.org/".
 
 3. fetch_proxies() Function
-```
+``` python
 def fetch_proxies():
     response = requests.get(proxy_url)
     soup = BeautifulSoup(response.text, 'html.parser')
@@ -49,7 +49,7 @@ Loop:
 - Return: Mengembalikan daftar proxy yang dikumpulkan.
 
 4. `validate_proxy(proxy)` Function
-```
+``` python
 def validate_proxy(proxy):
     try:
         proxy_ip, proxy_port = proxy.split(':')
@@ -71,7 +71,7 @@ def validate_proxy(proxy):
 - **Exception handling**: Jika terjadi kesalahan (misalnya, proxy tidak responsif atau tidak dapat dihubungi), fungsi akan menangkap error dan mengembalikan False yang berarti proxy tersebut tidak valid.
 
 5. get_valid_proxies() Function
-```
+``` python
 def get_valid_proxies():
     all_proxies = fetch_proxies()
     valid_proxies = []
