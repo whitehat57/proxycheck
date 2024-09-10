@@ -85,9 +85,9 @@ def get_valid_proxies():
 - `Fungsi get_valid_proxies()` bertujuan untuk mendapatkan daftar proxy yang valid.
 - `all_proxies = fetch_proxies()`: Mengambil semua proxy dari halaman web menggunakan fungsi fetch_proxies().
 Loop:
--`for proxy in all_proxies:`: Melakukan iterasi melalui setiap proxy dalam daftar all_proxies.
--`if validate_proxy(proxy):`: Memeriksa apakah proxy tersebut valid menggunakan fungsi validate_proxy().
--`valid_proxies.append(proxy)`: Jika proxy valid, tambahkan ke dalam daftar valid_proxies.
+- `for proxy in all_proxies:`: Melakukan iterasi melalui setiap proxy dalam daftar all_proxies.
+- `if validate_proxy(proxy):`: Memeriksa apakah proxy tersebut valid menggunakan fungsi validate_proxy().
+- `valid_proxies.append(proxy)`: Jika proxy valid, tambahkan ke dalam daftar valid_proxies.
 Return: Mengembalikan daftar proxy yang telah divalidasi dan terbukti dapat digunakan.
 
 Kesimpulan:
