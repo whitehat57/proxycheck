@@ -3,7 +3,7 @@ python tool to scrape proxy
 
 # dimohon jangan cuma bisa menggunakan, baca ini dan belajar
 
-Berikut adalah penjelasan bagian per bagian dari kode Python yang diberikan:
+Berikut adalah penjelasan bagian per bagian dari kode Python proxy check:
 
 1. Importing Libraries
 ```
