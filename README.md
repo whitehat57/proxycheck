@@ -8,15 +8,16 @@ Berikut adalah penjelasan bagian per bagian dari kode Python yang diberikan:
 import requests
 from bs4 import BeautifulSoup
 import socket
-requests: Library ini digunakan untuk melakukan HTTP requests di Python. Di sini, digunakan untuk mengirim permintaan ke halaman web yang berisi daftar proxy.
+```
+`requests`: Library ini digunakan untuk melakukan HTTP requests di Python. Di sini, digunakan untuk mengirim permintaan ke halaman web yang berisi daftar proxy.
 BeautifulSoup: Bagian dari library bs4 yang digunakan untuk memparsing HTML atau XML agar lebih mudah mengambil data dari halaman web.
-socket: Library bawaan Python yang menyediakan akses ke socket-level network interface. Digunakan untuk membuat koneksi jaringan antara client dan server, misalnya, untuk memeriksa apakah proxy dapat terhubung ke suatu alamat IP.
+`socket`: Library bawaan Python yang menyediakan akses ke socket-level network interface. Digunakan untuk membuat koneksi jaringan antara client dan server, misalnya, untuk memeriksa apakah proxy dapat terhubung ke suatu alamat IP.
 2. Definisi URL Proxy
 python
 Copy code
 proxy_url = "https://www.sslproxies.org/"
 Variabel proxy_url berisi URL dari halaman yang menyediakan daftar proxy gratis. Dalam hal ini, URL tersebut mengarah ke "https://www.sslproxies.org/".
-```
+
 3. fetch_proxies() Function
 python
 Copy code
